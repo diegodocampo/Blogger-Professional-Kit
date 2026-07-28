@@ -274,47 +274,16 @@ BOTONES
 
 }
 
-/*======================
-HERO
-======================*/
+/* CORRECCIÓN: los botones y enlaces con rol de botón se habían quedado sin
+   ningún indicador de foco al navegar con teclado (outline:none global sin
+   sustituto). Se restaura solo quien navega con teclado, sin afectar al
+   diseño visual con ratón. */
+button:focus-visible,
+a:focus-visible{
 
-.hero{
+    outline:3px solid rgba(110,159,145,.35);
 
-    display:flex;
-
-    align-items:center;
-
-    min-height:70vh;
-
-    background:var(--color-fondo-alt);
-
-    padding:120px 0;
-
-    text-align:center;
-
-}
-
-.hero h1{
-
-    max-width:850px;
-
-    margin:0 auto 25px;
-
-}
-
-.hero p{
-
-    max-width:700px;
-
-    margin:0 auto 35px;
-
-    font-size:18px;
-
-}
-
-.hero .btn{
-
-    margin-top:10px;
+    outline-offset:3px;
 
 }
 
