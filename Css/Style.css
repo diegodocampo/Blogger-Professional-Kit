@@ -693,3 +693,454 @@ RESPONSIVE
     }
 
 }
+
+/*======================
+MENÚ MÓVIL (nav-toggle)
+======================*/
+
+.nav-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:5px;
+
+    width:44px;
+    height:44px;
+
+    cursor:pointer;
+
+    transition:opacity var(--transicion);
+
+}
+
+.nav-toggle-bar{
+
+    display:block;
+
+    width:24px;
+    height:2px;
+
+    background:var(--texto-principal);
+
+    border-radius:var(--radio-bordes);
+
+    transition:
+        transform var(--transicion),
+        opacity var(--transicion);
+
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(1){
+
+    transform:translateY(7px) rotate(45deg);
+
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(2){
+
+    opacity:0;
+
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(3){
+
+    transform:translateY(-7px) rotate(-45deg);
+
+}
+
+/*======================
+BOTÓN SCROLL-TOP
+======================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    right:30px;
+    bottom:30px;
+
+    z-index:100;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:48px;
+    height:48px;
+
+    background:var(--color-principal);
+    color:#ffffff;
+
+    border-radius:50%;
+
+    font-size:20px;
+
+    box-shadow:var(--sombra);
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(10px);
+
+    transition:
+        opacity var(--transicion),
+        visibility var(--transicion),
+        transform var(--transicion),
+        background var(--transicion);
+
+}
+
+.scroll-top.is-visible{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    background:var(--color-secundario);
+
+}
+
+/*======================
+RESPONSIVE — NAVEGACIÓN
+======================*/
+
+@media (max-width:768px){
+
+    .nav-toggle{
+
+        display:flex;
+
+    }
+
+    #navigation{
+
+        display:none;
+
+        width:100%;
+
+    }
+
+    #navigation.is-open{
+
+        display:block;
+
+    }
+
+}
+
+/*==================================================
+CSS PUENTE — WIDGET BLOG1 (clases nativas de Blogger)
+==================================================*/
+
+.page-content{
+
+    padding:var(--padding-seccion) 0;
+
+}
+
+.date-header{
+
+    max-width:800px;
+
+    margin:0 auto 30px;
+
+    font-weight:600;
+
+    color:var(--texto-secundario);
+
+    text-transform:uppercase;
+
+    letter-spacing:.05em;
+
+    font-size:14px;
+
+}
+
+.post-outer-container{
+
+    max-width:800px;
+
+    margin:0 auto;
+
+}
+
+.post-outer{
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-bottom:40px;
+
+    border-radius:var(--radio-bordes);
+
+    box-shadow:var(--sombra);
+
+}
+
+.post-title.entry-title{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.post-title.entry-title a{
+
+    color:var(--texto-principal);
+
+}
+
+.post-title.entry-title a:hover{
+
+    color:var(--color-principal);
+
+    opacity:1;
+
+}
+
+.post-body.entry-content{
+
+    color:var(--texto-secundario);
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.post-body.entry-content img{
+
+    border-radius:var(--radio-bordes);
+
+    margin:20px 0;
+
+}
+
+.post-body.entry-content a{
+
+    color:var(--color-principal);
+
+    text-decoration:underline;
+
+}
+
+.post-footer{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eeeeee;
+
+    font-size:14px;
+
+    color:var(--texto-secundario);
+
+}
+
+.byline.post-comment-link.container a,
+.post-footer a{
+
+    color:var(--color-principal);
+
+    font-weight:600;
+
+}
+
+.post-labels a{
+
+    display:inline-block;
+
+    padding:4px 12px;
+
+    margin:0 6px 6px 0;
+
+    background:var(--color-fondo-alt);
+
+    color:var(--texto-secundario);
+
+    border-radius:var(--radio-bordes);
+
+    font-size:13px;
+
+}
+
+.blog-pager.container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    max-width:800px;
+
+    margin:40px auto 0;
+
+}
+
+.blog-pager-older-link,
+.home-link,
+.blog-pager-newer-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 22px;
+
+    background:var(--color-principal);
+
+    color:#ffffff;
+
+    border-radius:var(--radio-bordes);
+
+    font-weight:600;
+
+    transition:background var(--transicion);
+
+}
+
+.blog-pager-older-link:hover,
+.home-link:hover,
+.blog-pager-newer-link:hover{
+
+    background:var(--color-secundario);
+
+    opacity:1;
+
+}
+
+/*======================
+AUTOR (aboutPostAuthor)
+======================*/
+
+.author-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.author-avatar img{
+
+    border-radius:50%;
+
+    width:48px;
+    height:48px;
+
+}
+
+.author-name{
+
+    font-weight:600;
+
+    color:var(--texto-principal);
+
+}
+
+/*======================
+COMENTARIOS
+======================*/
+
+.comments{
+
+    max-width:800px;
+
+    margin:40px auto 0;
+
+    padding-top:30px;
+
+    border-top:1px solid #eeeeee;
+
+}
+
+.comments .title{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.comment{
+
+    padding:20px 0;
+
+    border-bottom:1px solid #f0f0f0;
+
+}
+
+.comment-author{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.comment-body{
+
+    color:var(--texto-secundario);
+
+}
+
+.comment-form{
+
+    margin-top:30px;
+
+}
+
+/*======================
+FEED LINKS
+======================*/
+
+.feed-links{
+
+    max-width:800px;
+
+    margin:20px auto;
+
+    font-size:13px;
+
+    color:var(--texto-secundario);
+
+}
+
+.feed-links a{
+
+    color:var(--color-principal);
+
+}
