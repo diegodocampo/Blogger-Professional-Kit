@@ -1194,3 +1194,104 @@ FEED LINKS
     color:var(--color-principal);
 
 }
+
+/*==================================================
+AVISO DE COOKIES
+==================================================*/
+
+.cookie-banner{
+
+    position:fixed;
+
+    left:20px;
+    right:20px;
+    bottom:20px;
+
+    z-index:200;
+
+    max-width:600px;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    border-radius:var(--radio-bordes);
+
+    box-shadow:var(--sombra);
+
+    padding:24px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:
+        opacity var(--transicion),
+        visibility var(--transicion),
+        transform var(--transicion);
+
+}
+
+.cookie-banner.is-visible{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.cookie-banner p{
+
+    margin-bottom:16px;
+
+    font-size:14px;
+
+}
+
+.cookie-banner-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    justify-content:flex-end;
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    color:var(--texto-principal);
+
+    border:1px solid #dddddd;
+
+}
+
+.btn-outline:hover{
+
+    background:var(--color-fondo-alt);
+
+}
+
+@media (max-width:480px){
+
+    .cookie-banner{
+
+        left:12px;
+        right:12px;
+        bottom:12px;
+
+        padding:18px;
+
+    }
+
+    .cookie-banner-actions{
+
+        flex-direction:column;
+
+    }
+
+}
