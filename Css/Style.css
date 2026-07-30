@@ -31,7 +31,7 @@ UTILIDADES
 
     position:absolute;
 
-    top:-40px;
+    top:0;
     left:0;
 
     z-index:1000;
@@ -43,13 +43,15 @@ UTILIDADES
 
     border-radius:0 0 var(--radio-bordes) 0;
 
-    transition:top var(--transicion);
+    transform:translateY(-100%);
+
+    transition:transform var(--transicion);
 
 }
 
 .skip-link:focus{
 
-    top:0;
+    transform:translateY(0);
 
 }
 
