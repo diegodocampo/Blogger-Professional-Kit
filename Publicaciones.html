@@ -1,1 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Blog de neuropsicología clínica. Artículos, noticias y recursos sobre evaluación neuropsicológica, rehabilitación cognitiva, neurociencia y salud mental. Publicaciones actualizadas periódicamente por la Dra. Elena Vargas.">
+    <meta name="keywords" content="blog neuropsicología, artículos neuropsicología, publicaciones neurociencia, rehabilitación cognitiva, evaluación neuropsicológica, salud cerebral, Dra. Elena Vargas, NeuroPsique">
+    <meta name="author" content="NeuroPsique">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:title" content="Publicaciones · Blog de Neuropsicología | NeuroPsique">
+    <meta property="og:description" content="Blog de neuropsicología clínica. Artículos, noticias y recursos sobre evaluación neuropsicológica, rehabilitación cognitiva, neurociencia y salud mental.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.github.io/neuropsique/publicaciones.html">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tudominio.github.io/neuropsique/publicaciones.html">
+    
+    <title>Publicaciones · Blog de Neuropsicología | NeuroPsique</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <!-- Fuentes: Playfair Display + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip to main content - Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="NeuroPsique - Ir a inicio">
+                <span class="logo-icon" aria-hidden="true">🧠</span>
+                <span class="logo-text">Neuro<span class="logo-accent">Psique</span></span>
+            </a>
+            
+            <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menú de navegación">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="sobre-mi.html" class="nav-link">Más de mí</a></li>
+                    <li><a href="publicaciones.html" class="nav-link active" aria-current="page">Publicaciones</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main id="main-content" role="main">
+        
+        <!-- HERO SECUNDARIO -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="container">
+                <span class="pretitle">Publicaciones</span>
+                <h1 id="page-hero-heading">Blog de <em>neuropsicología</em></h1>
+                <p class="lead">
+                    Artículos, noticias y recursos sobre evaluación neuropsicológica, rehabilitación cognitiva, neurociencia y salud mental. Contenido divulgativo basado en la evidencia científica, escrito para profesionales, pacientes y familias.
+                </p>
+            </div>
+        </section>
+        
+        <!-- FILTROS POR CATEGORÍA -->
+        <section class="blog-filters section-padding-top" aria-label="Filtrar publicaciones por categoría">
+            <div class="container">
+                <div class="filter-tabs" role="tablist" aria-label="Categorías de publicaciones">
+                    <button class="filter-tab active" role="tab" aria-selected="true" data-category="todas" id="tab-todas" aria-controls="blog-grid">
+                        <span aria-hidden="true">📋</span> Todas
+                    </button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-category="neuropsicologia" id="tab-neuropsicologia" aria-controls="blog-grid">
+                        <span aria-hidden="true">🧠</span> Neuropsicología
+                    </button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-category="rehabilitacion" id="tab-rehabilitacion" aria-controls="blog-grid">
+                        <span aria-hidden="true">🔄</span> Rehabilitación
+                    </button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-category="familia" id="tab-familia" aria-controls="blog-grid">
+                        <span aria-hidden="true">👨‍👩‍👧</span> Familia
+                    </button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-category="investigacion" id="tab-investigacion" aria-controls="blog-grid">
+                        <span aria-hidden="true">🔬</span> Investigación
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BARRA DE BÚSQUEDA -->
+        <section class="blog-search section-padding-top" aria-label="Buscar publicaciones">
+            <div class="container">
+                <div class="search-wrapper">
+                    <div class="search-input-group">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <input 
+                            type="search" 
+                            id="blog-search-input" 
+                            class="search-input" 
+                            placeholder="Buscar publicaciones por título o contenido..." 
+                            aria-label="Buscar publicaciones"
+                        >
+                    </div>
+                    <span id="search-results-count" class="search-results-count" aria-live="polite"></span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- GRID DE PUBLICACIONES -->
+        <section class="blog-grid-section section-padding" aria-labelledby="blog-heading">
+            <div class="container">
+                <h2 id="blog-heading" class="sr-only">Listado de publicaciones</h2>
+                
+                <div id="blog-grid" class="blog-grid">
+                    <!-- Las publicaciones se cargarán dinámicamente desde JavaScript -->
+                </div>
+                
+                <!-- Estado vacío (cuando no hay resultados) -->
+                <div id="blog-empty" class="blog-empty" hidden>
+                    <div class="empty-state">
+                        <span class="empty-icon" aria-hidden="true">📭</span>
+                        <h3>No se encontraron publicaciones</h3>
+                        <p>No hay artículos que coincidan con los filtros seleccionados. Prueba con otra categoría o vuelve a intentarlo más tarde.</p>
+                        <button id="btn-reset-filters" class="btn btn-outline">Ver todas las publicaciones</button>
+                    </div>
+                </div>
+                
+                <!-- Cargando (skeleton loader) -->
+                <div id="blog-loading" class="blog-loading" hidden>
+                    <div class="skeleton-grid">
+                        <div class="skeleton-card" aria-hidden="true">
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-tag"></div>
+                                <div class="skeleton-title"></div>
+                                <div class="skeleton-text"></div>
+                                <div class="skeleton-text short"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-card" aria-hidden="true">
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-tag"></div>
+                                <div class="skeleton-title"></div>
+                                <div class="skeleton-text"></div>
+                                <div class="skeleton-text short"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-card" aria-hidden="true">
+                            <div class="skeleton-image"></div>
+                            <div class="skeleton-content">
+                                <div class="skeleton-tag"></div>
+                                <div class="skeleton-title"></div>
+                                <div class="skeleton-text"></div>
+                                <div class="skeleton-text short"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paginación -->
+                <nav id="blog-pagination" class="blog-pagination" aria-label="Paginación de publicaciones" hidden>
+                    <button id="btn-prev-page" class="pagination-btn" disabled aria-label="Página anterior">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 5L7 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Anterior
+                    </button>
+                    
+                    <div id="pagination-numbers" class="pagination-numbers" aria-label="Números de página">
+                        <!-- Se generan dinámicamente -->
+                    </div>
+                    
+                    <button id="btn-next-page" class="pagination-btn" aria-label="Página siguiente">
+                        Siguiente
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M8 5L13 10L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </section>
+        
+        <!-- NEWSLETTER / SUSCRIPCIÓN -->
+        <section class="newsletter section-padding" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2 id="newsletter-heading">¿Quieres recibir las nuevas publicaciones?</h2>
+                        <p>Suscríbete a mi newsletter para recibir en tu email los nuevos artículos del blog, noticias sobre neuropsicología y convocatorias de talleres para familias.</p>
+                    </div>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <div class="newsletter-input-group">
+                            <input 
+                                type="email" 
+                                id="newsletter-email" 
+                                name="newsletter-email" 
+                                placeholder="tuemail@ejemplo.com" 
+                                required 
+                                autocomplete="email"
+                                aria-label="Email para suscripción a la newsletter"
+                                aria-required="true"
+                            >
+                            <button type="submit" class="btn btn-primary">
+                                Suscribirme
+                            </button>
+                        </div>
+                        <span class="form-error" id="newsletter-error" role="alert"></span>
+                        <div id="newsletter-success" class="newsletter-success" role="status" hidden>
+                            <span aria-hidden="true">✓</span> ¡Te has suscrito correctamente! Revisa tu email para confirmar.
+                        </div>
+                        <p class="newsletter-disclaimer">
+                            Sin spam, solo contenido de valor. Puedes darte de baja cuando quieras. Consulta nuestra <a href="#">política de privacidad</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA FINAL -->
+        <section class="cta section-padding" aria-labelledby="blog-cta-heading">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 id="blog-cta-heading">¿Tienes alguna pregunta sobre los artículos?</h2>
+                    <p>Si algún tema te genera dudas o quieres saber más, estaré encantada de conversar contigo. Puedes contactarme para una consulta personalizada.</p>
+                    <a href="contacto.html" class="btn btn-gold">Contactar ahora</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-text">Neuro<span class="logo-accent">Psique</span></span>
+                <p>Neuropsicología clínica basada en la evidencia, centrada en la persona.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Más de mí</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <address>
+                    <p>📧 <a href="mailto:info@neuropsique.com">info@neuropsique.com</a></p>
+                    <p>📱 <a href="tel:+34123456789">+34 123 456 789</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2026 NeuroPsique. Todos los derechos reservados.</p>
+                <ul class="legal-links">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
+    <!-- ========== BANNER DE COOKIES ========== -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description" aria-modal="true">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <div class="cookie-icon" aria-hidden="true">🍪</div>
+                <div class="cookie-text">
+                    <h3 id="cookie-title">Este sitio utiliza cookies</h3>
+                    <p id="cookie-description">
+                        Utilizamos cookies propias y de terceros para fines analíticos, mejorar tu experiencia de navegación y personalizar el contenido. Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="cookie-actions">
+                <button id="btn-accept-cookies" class="btn btn-primary btn-sm">
+                    Aceptar todas
+                </button>
+                <button id="btn-reject-cookies" class="btn btn-outline btn-sm">
+                    Solo necesarias
+                </button>
+                <a href="#" class="cookie-settings-link" aria-label="Configurar preferencias de cookies">
+                    Configurar preferencias
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay del banner de cookies -->
+    <div id="cookie-overlay" class="cookie-overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
